@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manish's Blog</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        background-color: #0073e6;
+        color: white;
+        padding: 10px 20px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ffdd00;
+      }
+
+      main {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+        border-radius: 10px;
+        max-width: 800px;
+      }
+
+      main div:first-child {
+        margin-bottom: 20px;
+        font-size: 16px;
+        text-align: left;
+        color: #555;
+      }
+
+      footer {
+        background-color: #0073e6;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        main {
+          margin: 10px;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/">About</a>
+        <a href="/">Contact</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <p>
+          Zomato: Bakeries near me, Bars near me, Beverage Shops near me,
+          Bhojanalya near me, Cafés near me, Casual Dining near me, Clubs near
+          me, Dessert Parlors near me, Dhabas near me, Fine Dining near me, Food
+          Courts near me, Food Trucks near me, Kiosks near me, Lounges near me,
+          Quick Bites near me, Sweet Shops near me
+        </p>
+      </div>
+      <div>
+        <h1>Welcome to Manish's Blog!</h1>
+        <p>Discover amazing places, food, and experiences near you.</p>
+      </div>
+      <p>This is the main content of the page.</p>
+    </main>
+
+    <footer>This is Footer © 2024 Manish's Blog</footer>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bookmarks</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Header Section */
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        /* Google Logo Link */
+        a img {
+            transition: transform 0.3s ease;
+        }
+
+        a img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Search Bar */
+        .search-bar {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .search-bar input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .search-bar input[type="text"]:focus {
+            border-color: #0073e6;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #0073e6;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-bar button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Bookmark Container */
+        div.bookmarks {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        /* Bookmark Links */
+        div.bookmarks a {
+            display: block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #0073e6;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        div.bookmarks a:hover {
+            background-color: #005bb5;
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .search-bar input[type="text"] {
+                width: 70%;
+            }
+
+            div.bookmarks a {
+                font-size: 1rem;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" 
+             height="100" 
+             alt="Google Logo">
+    </a>
+
+    <!-- Google Search Bar -->
+    <div class="search-bar">
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" placeholder="Search Google..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <h1>Your Bookmarks</h1>
+
+    <div class="bookmarks">
+        <a href="https://chatgpt.com/c/6761257c-0e28-800d-bdfe-5b1a4a09bbf8" target="_blank">ChatGPT</a>
+        <a href="https://www.google.com/" target="_blank">Google</a>
+        <a href="https://cuvette.tech/app/student/login/" target="_blank">Cuvette Login</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="/" target="_blank">Home</a>
+    </div>
+</body>
+</html>
