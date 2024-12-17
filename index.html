@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Link Page with Clock</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .clock {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #0066cc;
+            font-size: 1.2rem;
+        }
+        a:hover {
+            color: #ff6600;
+        }
+    </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illo saepe tempore ea voluptatibus tempora laudantium sapiente ut doloremque reiciendis tenetur magni, deserunt vero fuga minus ipsa vel temporibus labore sed officiis repellendus? </p>
+    <div class="clock" id="clock"></div>
+    <div class="container">
+        <h1>Welcome to My Link Page</h1>
+        <a href="https://www.google.com" target="_blank">Go to Google</a>
+        <a href="https://www.facebook.com" target="_blank">Visit Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Check Instagram</a>
+    </div>
+
+    <script>
+        function updateClock() {
+            const clockElement = document.getElementById('clock');
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initialize the clock immediately
+        updateClock();
+    </script>
 </body>
 </html>
