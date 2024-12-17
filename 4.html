@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      ol,
+      ul,
+      dl {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      ol {
+        counter-reset: item;
+        list-style: none;
+      }
+
+      ol li {
+        margin: 10px 0;
+        padding: 10px;
+        background: #f0f8ff;
+        border-left: 4px solid #0073e6;
+        position: relative;
+      }
+
+      ol li:before {
+        content: counter(item) ".";
+        counter-increment: item;
+        position: absolute;
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #0073e6;
+        font-weight: bold;
+      }
+
+      ul {
+        list-style: disc inside;
+      }
+
+      ul li {
+        margin: 10px 0;
+        padding: 10px;
+        background: #f9f9f9;
+        border-left: 4px solid #ffa500;
+      }
+
+      dl dt {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      dl dd {
+        margin: 5px 0 15px 20px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ordered, Unordered, and Definition Lists</h1>
+
+    <!-- Ordered List -->
+    <ol>
+      <li>Learn HTML Basics</li>
+      <li>Understand CSS Styling</li>
+      <li>Practice JavaScript</li>
+      <li>Explore Frontend Frameworks</li>
+      <li>Build a Personal Portfolio</li>
+    </ol>
+
+    <!-- Unordered List -->
+    <ul>
+      <li>Install a Text Editor (e.g., VSCode)</li>
+      <li>Bookmark Useful Resources</li>
+      <li>Join Web Development Communities</li>
+      <li>Stay Consistent with Practice</li>
+    </ul>
+
+    <!-- Definition List -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        HTML stands for HyperText Markup Language. It is used to create the
+        structure of a web page.
+      </dd>
+
+      <dt>CSS</dt>
+      <dd>
+        CSS stands for Cascading Style Sheets. It is used to style the HTML
+        elements on a web page.
+      </dd>
+
+      <dt>JavaScript</dt>
+      <dd>
+        JavaScript is a programming language that adds interactivity to a
+        website.
+      </dd>
+
+      <dt>Frontend Framework</dt>
+      <dd>
+        A frontend framework (like React or Angular) helps in building the user
+        interface efficiently.
+      </dd>
+    </dl>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        thead {
+            background-color: #0073e6;
+            color: #ffffff;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        th {
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Manish</td>
+                <td>Web Developer</td>
+                <td>$212,345</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>UI Designer</td>
+                <td>$150,000</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Backend Developer</td>
+                <td>$180,000</td>
+            </tr>
+            <tr>
+                <td>Emily</td>
+                <td>Frontend Developer</td>
+                <td>$170,000</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+  </body>
+</html>
